@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label x:Name="lblCount" Content="Current Count" HorizontalAlignment="Left" Margin="701,20,0,0" VerticalAlignment="Top"/>
+        <RichTextBox Margin="505,62,23,62">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbDisplay"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="84,64,0,0" VerticalAlignment="Top" Width="208" Click="btnAddStudent_Click"/>
+        <Label Content="Student Name" HorizontalAlignment="Left" Margin="32,33,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNewStudent" HorizontalAlignment="Left" Margin="170,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Content="Enter an Index" HorizontalAlignment="Left" Margin="32,129,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIndex" HorizontalAlignment="Left" Margin="170,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Button x:Name="btnDisplayStudent" Content="Display Student" HorizontalAlignment="Left" Margin="32,176,0,0" VerticalAlignment="Top" Width="202" Click="btnDisplayStudent_Click"/>
+        <Button x:Name="btnRemoveAtIndex" Content="Remove At Index" HorizontalAlignment="Left" Margin="32,217,0,0" VerticalAlignment="Top" Width="204" Click="btnRemoveAtIndex_Click"/>
+        <Button x:Name="btnAddStudentAtIndex" Content="Add Student at Index" HorizontalAlignment="Left" Margin="290,176,0,0" VerticalAlignment="Top" Width="183" Click="btnAddStudentAtIndex_Click"/>
+        <Button x:Name="btnClearList" Content="Clear List" HorizontalAlignment="Left" Margin="32,318,0,0" VerticalAlignment="Top" Width="441" Click="btnClearList_Click"/>
 
     </Grid>
 </Window>
