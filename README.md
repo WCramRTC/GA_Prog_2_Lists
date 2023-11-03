@@ -300,7 +300,7 @@ When you type in a name and click the button, the name should appear on the list
 {
     // Validate Value
     int index = -1;
-    bool isANumber = int.TryParse(txtIndex.Text, out int index)
+    bool isANumber = int.TryParse(txtIndex.Text, out index)
 
     // Check if the number is between 0 and the last index in the list
     if ( isANumber && index >= 0 && index < studentNames.Count)
